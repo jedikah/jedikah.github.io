@@ -9,7 +9,6 @@
     "lint": "eslint --ext .js,.ts,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "build": "quasar build",
-    "deploy-surge": "surge dist/spa portfolio-gabrielkwan.surge.sh",
     "deploy": "push-dir --dir=dist/spa --remote=gh-pages --branch=master"
   },
   "dependencies": {
