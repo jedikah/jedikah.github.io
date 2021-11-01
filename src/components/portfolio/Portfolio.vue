@@ -47,7 +47,7 @@ export default defineComponent({
   },
   setup() {
     const switchName = ref('panel_1');
-    const selected = ref(null);
+    const selected = ref<null | typeof detailsProjects[0]>(null);
 
     const detailsProjects = [
       {
@@ -73,11 +73,7 @@ export default defineComponent({
       },
     ];
 
-    function selectedProject(selected: number) {
-      return detailsProjects.filter((dp) => dp.row === selected);
-    }
-
-    return { switchName, detailsProjects, selected, selectedProject };
+    return { switchName, detailsProjects, selected };
   },
 });
 </script>
