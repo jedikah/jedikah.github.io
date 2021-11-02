@@ -18,7 +18,7 @@
             v-for="n in carousel_length"
             :key="n"
             :name="n"
-            :img-src="require(`.${n}.jpg`)"
+            :img-src="`./portfolio/${src_name}/${n}.jpg`"
           />
         </q-carousel>
       </div>

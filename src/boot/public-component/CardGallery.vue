@@ -21,7 +21,7 @@
         class="card-content card-content1"
       >
         <img
-          :src="`portfolio/${src_name}/1.jpg`"
+          :src="require(`./test1.jpg`)"
           style="width: 100%; object-fit: cover; height: 100%"
         />
       </q-card>
